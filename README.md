@@ -1,6 +1,10 @@
 # Position-Bias-Analyzer
 This repo serves for judging the LLM judges in terms of position bias.
 
+Our paper can be accessed [here](https://arxiv.org/abs/2406.07791)
+
+## Introduction
+
 The metrics measuring position bias are:
 1. Repetitional Consistency (this refers to repetition bias as well)
 2. Positonal Consistency
@@ -61,7 +65,7 @@ export PYTHONPATH=$PWD
 export KEYS=path/to/keys.json
 ```
 
-For API keys, store than in a `json` file (e.g., `keys.json`) using the following format:
+For API keys, store them in a `json` file (e.g., `keys.json`) using the following format:
 ```json
 {
     "claude-keys":[
@@ -177,5 +181,16 @@ We also provided our extensive experiment results, as specified in [judgment_dat
 We make use of DevBench's code for LLM judge (subjective evaluation). Thank them for their clear and useful code. Their original codes can be accessed from [here](https://github.com/open-compass/DevBench/tree/main/llm_judge).
 
 
-
+## Citation
+Thank you for liking our work! You may cite our work using the following `BibTex`:
+```
+@misc{shi2024judging,
+      title={Judging the Judges: A Systematic Investigation of Position Bias in Pairwise Comparative Assessments by LLMs}, 
+      author={Lin Shi and Weicheng Ma and Soroush Vosoughi},
+      year={2024},
+      eprint={2406.07791},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
